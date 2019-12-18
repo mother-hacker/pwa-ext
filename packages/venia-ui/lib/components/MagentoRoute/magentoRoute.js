@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import {
     INTERNAL_ERROR,
     NOT_FOUND,
     useMagentoRoute
 } from '@magento/peregrine/lib/talons/MagentoRoute';
+//TODO: Should replaced to private package
+import Calc from '@dshitik/amasty-calc/lib/index'
 
 import { fullPageLoadingIndicator } from '../LoadingIndicator';
 
@@ -20,7 +22,10 @@ const MagentoRoute = () => {
     } else if (RootComponent) {
         return <RootComponent id={id} />;
     } else if (routeError === NOT_FOUND) {
-        return <h1>{MESSAGES.get(routeError)}</h1>;
+        return <Fragment>
+            <h1>{MESSAGES.get(routeError)}</h1>
+            <Calc/>
+        </Fragment>
     }
 
     return <h1>{MESSAGES.get(INTERNAL_ERROR)}</h1>;

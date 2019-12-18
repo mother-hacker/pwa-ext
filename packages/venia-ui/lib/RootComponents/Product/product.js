@@ -1,6 +1,5 @@
 import React, { Fragment, useEffect } from 'react';
 import { useProduct } from '@magento/peregrine/lib/talons/RootComponents/Product/useProduct';
-
 import { Title } from '../../components/Head';
 import { fullPageLoadingIndicator } from '../../components/LoadingIndicator';
 import ProductFullDetail from '../../components/ProductFullDetail';
@@ -43,7 +42,6 @@ const Product = () => {
             </h1>
         );
     }
-
     // Note: STORE_NAME is injected by Webpack at build time.
     return (
         <Fragment>

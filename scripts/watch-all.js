@@ -22,15 +22,15 @@ const gracefulExit = () => {
 process.on('SIGINT', gracefulExit);
 
 const rootDir = path.resolve(__dirname, '..');
-
+const spaces = '[venia||amasty]'
 const restartDevServerOnChange = [
     'packages/pwa-buildpack/lib/**/*.js',
     'packages/upward-js/lib/**/*.js',
-    'packages/venia-*/*.{js,json,yml}',
-    'packages/venia-*/.env',
-    'packages/venia-*/static/**/*',
-    'packages/venia-*/templates/**/*',
-    'packages/venia-*/static/**/*',
+    `packages/${spaces}-*/*.{js,json,yml}`,
+    `packages/${spaces}-*/.env`,
+    `packages/${spaces}-*/static/**/*`,
+    `packages/${spaces}-*/templates/**/*`,
+    `packages/${spaces}-*/static/**/*`,
     'yarn.lock'
 ];
 
