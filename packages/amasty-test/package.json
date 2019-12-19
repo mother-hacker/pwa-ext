@@ -8,9 +8,20 @@
         "build": " ",
         "build:ci": " ",
         "build:dev": " ",
-        "clean": " "
+        "clean": " ",
+        "test": "jest",
+        "storybook": "start-storybook -p 9002 -c .storybook",
+        "storybook:build": "build-storybook -c .storybook -o storybook-dist"
     },
     "author": "",
     "license": "ISC",
+    "dependencies": {
+        "@magento/upward-js" :"^4.0.0-alpha.1",
+        "@apollo/react-hooks": "~3.1.2"
+    },
+    "devDependencies": {
+        "react-test-renderer": "~16.9.0",
+        "@storybook/react": "~5.2.6"
+    },
     "peerDependencies": {}
 }

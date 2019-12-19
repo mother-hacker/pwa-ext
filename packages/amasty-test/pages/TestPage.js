@@ -1,7 +1,14 @@
 import React from 'react';
+import GET_ALL_COUNTRIES from '../queries/getAllCountries.graphql';
+import { useQuery } from '@apollo/react-hooks';
 
-class TestPage extends React.Component {
-    render() {
-        return <h1>Test Page!</h1>
-    }
+export const TestPage = () =>  {
+
+    const { loading, error, data } = useQuery(GET_ALL_COUNTRIES);
+    console.log(data, 'data')
+    return(
+        <div>
+            {loading ? 'Loading...' : 'Done'}
+        </div>
+    )
 }

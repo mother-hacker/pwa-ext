@@ -5,7 +5,7 @@ body: response.body
 response:
   when:
     - matches: request.url.pathname
-      pattern: '^/test'
+      pattern: '^/test/?$'
       use: testScript
   default:
     inline: ''

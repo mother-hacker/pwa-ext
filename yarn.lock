@@ -2840,6 +2840,32 @@
     request "^2.83.0"
     request-promise "^4.2.2"
 
+"@magento/upward-js@^4.0.0-alpha.1":
+  version "4.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@magento/upward-js/-/upward-js-4.0.0-alpha.1.tgz#f713c34d04ab72cb84370a465b7fb66383592394"
+  integrity sha512-On4xoIolJUAbVCdeS9VJVaw5pF8BalHHchdEnCHr7VIjky3juXVCEUkCt3TaHw0tPUhUas2SJr/xRJ1nDnvZiA==
+  dependencies:
+    apollo-link "~1.2.8"
+    apollo-link-http "~1.5.11"
+    camelspace "~1.0.0"
+    connect "~3.6.6"
+    contains-path "~1.0.0"
+    debug "~4.1.1"
+    dotenv "~6.2.0"
+    errorhandler "~1.5.1"
+    graphql "~14.3.1"
+    graphql-tag "~2.10.1"
+    hogan.js "~3.0.2"
+    http-proxy-middleware "~0.19.1"
+    js-yaml "~3.13.1"
+    lodash "~4.17.11"
+    morgan "~1.9.1"
+    node-fetch "~2.3.0"
+    shrink-ray-current "~4.0.0"
+  optionalDependencies:
+    iltorb "^2.0.0"
+    node-zopfli-es "^1.0.3"
+
 "@mdx-js/loader@~1.5.1":
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-1.5.1.tgz#d66a00b757345540c1530f750459de39b0fb7b96"

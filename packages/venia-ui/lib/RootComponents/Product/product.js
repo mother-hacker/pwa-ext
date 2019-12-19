@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import { useProduct } from '@magento/peregrine/lib/talons/RootComponents/Product/useProduct';
 
+import { ButtonTest } from '@dshitik/amasty-test'
 import { Title, Meta } from '../../components/Head';
 import { fullPageLoadingIndicator } from '../../components/LoadingIndicator';
 import ProductFullDetail from '../../components/ProductFullDetail';
@@ -50,6 +51,7 @@ const Product = () => {
             <Title>{`${product.name} - ${STORE_NAME}`}</Title>
             <Meta name="description" content={product.meta_description} />
             <ProductFullDetail product={product} />
+            <ButtonTest text='in product page'/>
         </Fragment>
     );
 };

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render button test with text property 1`] = `
+<button>
+  <span>
+    Test button Some text
+  </span>
+</button>
+`;
+
+exports[`Render button test without text property 1`] = `
+<button>
+  <span>
+    Test button 
+  </span>
+</button>
+`;
