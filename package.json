@@ -36,6 +36,7 @@
     "stage:venia": "yarn venia run start",
     "stats:venia": "yarn venia run build:analyze && yarn venia run stats",
     "storybook:venia": "yarn workspace @magento/venia-ui run storybook",
+    "storybook:amasty": "yarn workspace @dshitik/amasty-test run storybook",
     "test": "node --experimental-worker node_modules/.bin/jest",
     "test:ci": "node --experimental-worker node_modules/.bin/jest --max-workers=3 --json --outputFile=test-results.json",
     "test:debug": "node --experimental-worker --inspect-brk node_modules/.bin/jest --no-cache",

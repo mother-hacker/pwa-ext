@@ -1,7 +1,7 @@
 import React from 'react';
 import { string } from 'prop-types';
 
-const Button = props => {
+const ButtonTest = props => {
     const {text} = props;
 
     return (
@@ -10,12 +10,12 @@ const Button = props => {
         </button>
     );
 };
-Button.propTypes = {
+ButtonTest.propTypes = {
     text: string
 };
 
-Button.defaultProps = {
+ButtonTest.defaultProps = {
     text: ''
 };
 
-export default Button;
+export default ButtonTest;

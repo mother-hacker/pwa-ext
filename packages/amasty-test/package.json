@@ -21,6 +21,7 @@
     },
     "devDependencies": {
         "react-test-renderer": "~16.9.0",
+        "@babel/plugin-proposal-class-properties": "~7.3.4",
         "@storybook/react": "~5.2.6"
     },
     "peerDependencies": {}
