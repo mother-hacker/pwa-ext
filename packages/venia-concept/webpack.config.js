@@ -45,7 +45,11 @@ module.exports = async env => {
                 graphqlQueries: true,
                 rootComponents: true,
                 upward: true
-            }
+            },
+            '@dshitik/amasty-test': {
+                esModules: true,
+                cssModules: true
+            },
         },
         env
     });
