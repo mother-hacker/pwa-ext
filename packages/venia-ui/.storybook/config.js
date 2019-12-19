@@ -6,7 +6,7 @@ import '@magento/venia-concept/src/index.css';
 import { PeregrineContextProvider } from '@magento/peregrine';
 
 function loadStories() {
-    const context = require.context('../lib', true, /__stories__\/.+\.js$/);
+    const context = require.context('../../', true, /__stories__\/.+\.js$/);
     context.keys().forEach(context);
 }
 
